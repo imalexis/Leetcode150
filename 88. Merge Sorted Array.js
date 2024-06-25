@@ -23,7 +23,7 @@ End Algorithm
  */
 
 /**
- * Another slightly different style
+ * This is another slightly different logic style of pseudocode
  
 Algorithm MergeSortedArray2(nums1, m, nums2, n):
     Initialize three pointers:
