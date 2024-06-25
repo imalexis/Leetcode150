@@ -1,5 +1,4 @@
 /**
- 
 Algorithm MergeSortedArray(nums1, m, nums2, n):
     Initialize three pointers:
         i = m - 1   
@@ -8,6 +7,32 @@ Algorithm MergeSortedArray(nums1, m, nums2, n):
 
     While j >= 0:
         If i >= 0 AND nums1[i] > nums2[j]:
+            Set nums1[k] to nums1[i]
+            Decrease i by 1
+        Else:
+            Set nums1[k] to nums2[j]
+            Decrease j by 1
+        Decrease k by 1
+
+    While j >= 0:
+        Set nums1[k] to nums2[j]
+        Decrease both j and k by 1
+
+End Algorithm
+
+ */
+
+/**
+ * Another slightly different style
+ 
+Algorithm MergeSortedArray2(nums1, m, nums2, n):
+    Initialize three pointers:
+        i = m - 1   
+        j = n - 1   
+        k = m + n - 1   
+
+    While i >= 0 & j >= 0:
+        If nums1[i] > nums2[j]:
             Set nums1[k] to nums1[i]
             Decrease i by 1
         Else:
