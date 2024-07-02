@@ -29,7 +29,7 @@ var removeElement = function (nums, val) {
 Approach : Two Pointers
 
 Time complexity : O(n).
-Assume the array has a total of n elements, both i and j traverse at most 2n steps.
+Assume the array has a total of n elements.
 
 Space complexity : O(1)
 
