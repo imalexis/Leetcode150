@@ -1,7 +1,8 @@
 /**
  
  RemoveElement(nums, val):
-    l = -1
+    l = 1
+    count = 1
     For r = 0 to length of nums - 1:
         If nums[r] != val:
             l++
